@@ -12,6 +12,7 @@
 		E8F996422BD13D9D00D793A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F996412BD13D9D00D793A3 /* Assets.xcassets */; };
 		E8F996452BD13D9D00D793A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F996442BD13D9D00D793A3 /* Preview Assets.xcassets */; };
 		E8F9964C2BD13ECC00D793A3 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9964B2BD13ECC00D793A3 /* CalculatorButton.swift */; };
+		E8F9964E2BD142BC00D793A3 /* CalculatorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9964D2BD142BC00D793A3 /* CalculatorRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E8F996412BD13D9D00D793A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8F996442BD13D9D00D793A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8F9964B2BD13ECC00D793A3 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
+		E8F9964D2BD142BC00D793A3 /* CalculatorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +57,10 @@
 			children = (
 				E8F9963D2BD13D9700D793A3 /* CalculatorApp.swift */,
 				E8F9963F2BD13D9700D793A3 /* ContentView.swift */,
+				E8F9964B2BD13ECC00D793A3 /* CalculatorButton.swift */,
+				E8F9964D2BD142BC00D793A3 /* CalculatorRow.swift */,
 				E8F996412BD13D9D00D793A3 /* Assets.xcassets */,
 				E8F996432BD13D9D00D793A3 /* Preview Content */,
-				E8F9964B2BD13ECC00D793A3 /* CalculatorButton.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F9964E2BD142BC00D793A3 /* CalculatorRow.swift in Sources */,
 				E8F996402BD13D9700D793A3 /* ContentView.swift in Sources */,
 				E8F9964C2BD13ECC00D793A3 /* CalculatorButton.swift in Sources */,
 				E8F9963E2BD13D9700D793A3 /* CalculatorApp.swift in Sources */,
