@@ -17,7 +17,7 @@ struct CalculatorHome: View {
     var body: some View {
         
         GeometryReader { geo in
-            VStack(alignment: .trailing, spacing: 20) {
+            VStack(alignment: .trailing, spacing: 10) {
                 
                 Spacer()
                 

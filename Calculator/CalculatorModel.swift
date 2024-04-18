@@ -10,7 +10,7 @@ import Foundation
 class CalculatorModel: ObservableObject {
     
     // Used to update the UI
-    @Published var displayValue = "9"
+    @Published var displayValue = "0"
     
     var currentOp: Operator?
     var currentNumber: Double? = 0
@@ -39,6 +39,15 @@ class CalculatorModel: ObservableObject {
         }
     }
     
+    func setDisplayValue(number: Double) {
+        if number == floor(number) {
+            displayValue = "\(Int(number))"
+        } else {
+            let decimalPlaces = 10
+            displayValue = "\(round(number * pow(10, decimalPlaces)) / pow(10, decimalPlaces))"
+        }
+    }
+    
     func reset() {
         currentOp = nil
         currentNumber = 0
@@ -56,10 +65,35 @@ class CalculatorModel: ObservableObject {
     }
     
     func numberPressed(value: Double) {
+        if equaled {
+            currentNumber = nil
+            previousNumber = nil
+            equaled = false
+        }
+        
+        if currentNumber == nil {
+            currentNumber = value / pow(10, decimalPlace)
+            
+        } else {
+            if decimalPlace == 0 {
+                currentNumber = currentNumber! * 10 + value
+                
+                
+            } else {
+                currentNumber = currentNumber! + value / pow(10,decimalPlace)
+                decimalPlace += 1
+            }
+        }
+        setDisplayValue(number: currentNumber!)
         
     }
     
     func operatorPressed(operator: Operator) {
         
     }
+}
+
+func pow(_ base: Int, _ exp: Int) -> Double {
+    return pow(Double(base), Double(exp))
+    
 }
