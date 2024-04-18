@@ -34,7 +34,7 @@ class CalculatorModel: ObservableObject {
             numberPressed(value: value)
             
         } else {
-            operatorPressed(operator: Operator())
+            operatorPressed(op: Operator(label))
             
         }
     }
@@ -88,8 +88,27 @@ class CalculatorModel: ObservableObject {
         
     }
     
-    func operatorPressed(operator: Operator) {
+    func operatorPressed(op: Operator) {
+        decimalPlace = 0
         
+        if equaled {
+            currentNumber = nil
+            equaled = false
+        }
+        
+        if currentNumber != nil && previousNumber != nil {
+            let total = currentOp!.op(previousNumber!, currentNumber!)
+            previousNumber = total
+            currentNumber = nil
+            
+            setDisplayValue(number: total)
+            
+        } else if previousNumber == nil {
+            previousNumber = currentNumber
+            currentNumber = nil
+            
+        }
+        currentOp = op
     }
 }
 
