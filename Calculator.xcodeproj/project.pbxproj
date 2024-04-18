@@ -11,6 +11,7 @@
 		E8F996402BD13D9700D793A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9963F2BD13D9700D793A3 /* ContentView.swift */; };
 		E8F996422BD13D9D00D793A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F996412BD13D9D00D793A3 /* Assets.xcassets */; };
 		E8F996452BD13D9D00D793A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F996442BD13D9D00D793A3 /* Preview Assets.xcassets */; };
+		E8F9964C2BD13ECC00D793A3 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9964B2BD13ECC00D793A3 /* CalculatorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E8F9963F2BD13D9700D793A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8F996412BD13D9D00D793A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8F996442BD13D9D00D793A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8F9964B2BD13ECC00D793A3 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				E8F9963F2BD13D9700D793A3 /* ContentView.swift */,
 				E8F996412BD13D9D00D793A3 /* Assets.xcassets */,
 				E8F996432BD13D9D00D793A3 /* Preview Content */,
+				E8F9964B2BD13ECC00D793A3 /* CalculatorButton.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F996402BD13D9700D793A3 /* ContentView.swift in Sources */,
+				E8F9964C2BD13ECC00D793A3 /* CalculatorButton.swift in Sources */,
 				E8F9963E2BD13D9700D793A3 /* CalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
